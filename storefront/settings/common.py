@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 from datetime import timedelta
-from celery.schedules import crontab
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -160,10 +159,10 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=1)
 }
 
-DEFAULT_FROM_EMAIL = 'from@moshbuy.com'
+DEFAULT_FROM_EMAIL = 'from@krishnabuy.com'
 
 ADMINS = [
-    ('Mosh', 'admin@moshbuy.com')
+    ('krishna', 'admin@krishnabuy.com')
 ]
 
 CELERY_BEAT_SCHEDULE = {
